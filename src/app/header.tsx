@@ -16,16 +16,17 @@ export const Header = () => {
         <div>FileDrive</div>
         <div className="flex gap-2">
           <OrganizationSwitcher />
+          <UserButton />
           <SignedOut>
             <SignInButton mode="modal">
               <Button>Sign In</Button>
             </SignInButton>
           </SignedOut>
-          <SignedIn>
+          {/* <SignedIn>
             <SignOutButton>
               <Button>Sign Out</Button>
             </SignOutButton>
-          </SignedIn>
+          </SignedIn> */}
         </div>
       </div>
     </div>
